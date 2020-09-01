@@ -1,4 +1,4 @@
-'''KNN is used to group data with simmilar atributes in higher dimenstion.
+'''KNN is used to group data with simmilar atributes in higher dimensions.
 
 We decide the number of K, which means we find the K closest neighbors
 to our new data point and from there deduce where it "belongs".
@@ -129,6 +129,6 @@ clf=neighbors.KNeighborsClassifier(n_jobs=-1)
 
 clf.fit(X_train,y_train)
 
-accuracy1=clf.score(X_test,y_test)
+accuracy=clf.score(X_test,y_test)
 
-print('Sklearns KNN accuracy: ',accuracy1)
+print('Sklearns KNN accuracy: ',accuracy)
